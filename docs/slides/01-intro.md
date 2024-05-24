@@ -645,11 +645,11 @@
 </div>
 
 <div class="title-version">
-Version: 202405231747-0983d13
+Version: 202405241556-da8346f
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
-    <a href="pdf/Code -> Cluster Boosting development with a local kubernetes ops platform">
+    <a href="pdf/Code - Cluster Boosting development with a local kubernetes ops platform.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
 
@@ -693,17 +693,15 @@ Rancher Desktop
 
 
 
-<!-- .slide: style="text-align: center;" -->
-# Start a k8s cluster in ~10s
+<!-- .slide: style="text-align: center" data-background-color="#27A4DE" -->
+# Start a local k8s cluster with one command <!-- .element style="color: white;" class="r-fit-text" -->
 
-```bash
-k3d cluster create test
-```
+<img data-src="images/k3d-cluster-create.gif" width="90%"/>
 
 
 
 <!-- .slide: style="text-align: center;" -->
-# Now start the platform
+# Next, start the platform
 
 <div class="fragment">
 <img data-src="images/OCI-logo.svg" style="height: 2em; vertical-align: middle;" />
@@ -718,13 +716,20 @@ k3d cluster create test
 </div>
 
 <div class="fragment" style="margin-top: 20px">
-    <img style="border-radius: 5px;" width="45%" data-src="images/spongebob-squarepants-hmmm.gif"/>
+    <img style="border-radius: 5px;" width="45%" data-src="images/spongebob-squarepants-cloud-engineer.gif"/>
     <div style="font-size: 10%"><a href="https://tenor.com/view/spongebob-squarepants-spongebob-think-thinking-gif-4280214517394111861">🌐 tenor.com/view/spongebob-squarepants-spongebob-think-thinking-gif-4280214517394111861</a></div>
 </div>
 
+Note:
+* More tools: 
+* Logging tools
+* Backup tools
+* Progressive Delivery tools
 
 
-# Let's write a little script... <!-- .element: class="r-fit-text" -->
+
+<!-- .slide: data-auto-animate style="font-size: 135%;" -->
+# So, let's write a *little* script... 
 
 
 
@@ -733,27 +738,8 @@ k3d cluster create test
 <!-- .slide: style="text-align: center;" data-background-color="#0D1117"-->
 
 <img data-src="images/hundreds-of-LOC-in-bash.png"/>
-<span style="font-size: 900%; position: absolute; left: 60%;" class="fragment">🤦</span>
+<span style="font-size: 900%; position: absolute; left: 60%;" class="fragment">😰</span>
 
 
 
-# Wouldn't it be great to start the platform locally with one command? 
-
-
-
-# Meet GOP
-<!-- .slide: style="font-size:85%"  -->
-<span style="font-size: 200%"><i class="fab fa-linux"></i> <i class="fab fa-windows"></i> <i class="fab fa-apple"></i> ➕ <i class="fab fa-docker"></i></span>
-
-```bash
-COMMIT='8e21bd4' 
-bash <(curl -s \
-  "https://raw.githubusercontent.com/cloudogu/gitops-playground/$COMMIT/scripts/init-cluster.sh") \
-  --bind-ingress-port=80  \
-  && sleep 2 && docker run --rm -it --pull=always -u $(id -u) \
-    -v ~/.config/k3d/kubeconfig-gitops-playground.yaml:/home/.kube/config \
-    --net=host \
-    ghcr.io/cloudogu/gitops-playground:$COMMIT --yes --argocd --base-url=http://local.gd
-# Other interesting options --monitoring --vault=dev 
-```
-
+# Why not start the platform with one command? <!-- .element class="r-fit-text" -->
