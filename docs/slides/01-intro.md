@@ -645,7 +645,7 @@
 </div>
 
 <div class="title-version">
-Version: 202405291724-a408f03
+Version: 202405311646-d83310d
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
@@ -711,7 +711,6 @@ Rancher Desktop
 <img data-src="images/prometheus-logo.svg" style="height: 2em; vertical-align: middle;"/>
 <img data-src="images/vault-logo.svg" style="height: 2em; vertical-align: middle;"/>
 <img data-src="images/eso-round-logo.svg" style="height: 2em; vertical-align: middle;"/>
-<img data-src="images/Nginx_logo.svg" style="height: 2em; vertical-align: middle;"/>
 ...
 </div>
 

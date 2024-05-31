@@ -1,14 +1,14 @@
 # Meet GOP <!-- .element style="font-size: 200%" -->
 <!-- .slide: style="font-size:70%"  -->
 
-a GitOps-based operational stack / platform
+a GitOps-based operational stack (platform)
 
 <span style="font-size: 250%">
 <i class="fab fa-linux" style="color: #FFD133;"></i> 
 <i class="fab fa-windows" style="color: #2279D1;"></i> 
 <i class="fab fa-apple" style="color: black;"></i>
 <span style="margin: 0 30px">➕</span>
-<i class="fab fa-docker" style="color: #3696EA;"></i></span>
+<i class="fab fa-docker" style="color: #1D63ED;"></i></span>
 
 ```bash
 COMMIT='42e5f80' 
