@@ -645,7 +645,7 @@
 </div>
 
 <div class="title-version">
-Version: 202406050933-a7d678d
+Version: 202406051535-c7b2b3f
 </div>
 
 <p style="font-size: 70%">
@@ -771,4 +771,14 @@ color: #dbdbdb;
 .argo-button { cursor: pointer; position: relative; display: inline-block; vertical-align: middle; padding: 8px 18px; 
     font-size: 13px; font-weight: 500; line-height: 1.4; text-align: center; border-radius: 24px; user-select: none; 
     transition: background-color .2s, border .2s, color .2s; text-transform: uppercase; }
+
+.toolbar-link:hover:not(.disabled) {
+  background-color: #ebeef2;
+  border: 0;
+  color: #1563ff;
+}
+.toolbar-link:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 </style>

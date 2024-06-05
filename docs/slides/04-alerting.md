@@ -39,7 +39,8 @@ Add this repo to Argo CD (via GitOps):
 <!-- .slide: id="exercise-alerting-2" -->
 <!-- .slide: style="font-size: 80%" -->
 
-* Go to <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> [argocd.localhost](http://argocd.localhost), click <a href="http://argocd.localhost/applications?new={%22apiVersion%22:%22argoproj.io/v1alpha1%22,%22kind%22:%22Application%22}" target="_blank"><button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-plus" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">New App</span></div></button></a>
+
+* Go to <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> [argocd.localhost](http://argocd.localhost), click <a href="http://argocd.localhost/applications?new=%7B%22apiVersion%22%3A%22argoproj.io%2Fv1alpha1%22%2C%22kind%22%3A%22Application%22%7D" target="_blank"><button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-plus" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">New App</span></div></button></a>
 * Enter `Name`: `broken` 
 * Click on `Project Name`, choose `example apps`
 * Click on `Repository URL`, choose the `broken-application` repo
@@ -72,8 +73,8 @@ Note:
 * Fix error in repo:  
   <span style="font-size: 85%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/code/sources/main/argocd/broken.yaml">scmm.localhost/scm/repo/argocd/example-apps/code/sources/main/argocd/broken.yaml</a>
 * Go to <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> [argocd.localhost/applications/argocd/broken](http://argocd.localhost/applications/argocd/broken), click <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-sync" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Sync</span></div></button>
-* Open application in Browser 🥳
-* Have a closer look at the concepts behind this 👇️
+* Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open application in browser 🥳  
+* Have a closer look at the concepts behind this <a class="navigate-next">👇️</a>
 
 
 

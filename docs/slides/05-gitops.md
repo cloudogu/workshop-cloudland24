@@ -78,7 +78,7 @@ Then:
    ➡️ Watch GitOps deployment
 5. <i class="fas fa-sync"></i> Reload app in Browser
    ➡️ Shows message in production 🥳🥳
-6. Have a closer look at the concepts behind this 👇️
+6. Have a closer look at the concepts behind this <a class="navigate-next">👇️</a>
 
 
 
