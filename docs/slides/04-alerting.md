@@ -65,7 +65,7 @@ Note:
 
 * Paste content here:  
   <span style="font-size: 85%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/argocd">scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/argocd</a></span>
-* Enter `Filename`: `broken.yaml`, and Commit Message, then click
+* Enter `Filename`: `broken.yaml`, and commit message, then click
   <button type="button" class="button is-primary">Commit</button>
 * Go to <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> [argocd.localhost/applications/argocd/broken](http://argocd.localhost/applications/argocd/broken), click <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-sync" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Sync</span></div></button>
 * Check email in <img data-src="images/mailhog.png" style="height: 1em; vertical-align: middle;"/> [mailhog.localhost](http://mailhog.localhost) <img data-src="images/screenshot-mailhog-argocd.png" class="floatRight" style="border-radius: 5px; margin-right: 250px; margin-top: 5px" width="24%" />

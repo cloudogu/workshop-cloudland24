@@ -90,7 +90,7 @@ Let's start with some basics <a class="navigate-next">👇️</a>
    <span style="font-size: 70%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/>  <a href="http://scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/apps/nginx-helm-umbrella">scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/apps/nginx-helm-umbrella</a> 
   * `Path`: **Add** `/templates`
   * `Filename`: `secret.yaml`
-3. Check if <img data-src="images/secret.svg" style="height: 1.2em; vertical-align: middle;"/>  `secret` was created:  
+3. Check if <img data-src="images/secret.svg" style="height: 1.2em; vertical-align: middle;"/> `secret` was created:  
    <span style="font-size: 95%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-production/nginx-helm-umbrella">argocd.localhost/applications/example-apps-production/nginx-helm-umbrella</a></span>
 
 
@@ -105,4 +105,6 @@ Let's start with some basics <a class="navigate-next">👇️</a>
       one `nginx.extraVolumeMounts`
 5. Go to <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> [argocd.localhost/applications/argocd/broken](http://argocd.localhost/applications/argocd/broken), click <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-sync" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Sync</span></div></button>
 6. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open application in browser, add path `/secret` 🥳
-6. Optional: Change the secret in Vault and wait for sync as in [Warmup](#secrets-warmup) 🤓
+7. Optional: Change the secret in Vault and wait for sync as in [Warmup](#secrets-warmup) 🤓
+
+⚠️ Secret in vault is transient, i.e. gone after restart (dev mode)

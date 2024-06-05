@@ -645,7 +645,7 @@
 </div>
 
 <div class="title-version">
-Version: 202406051535-c7b2b3f
+Version: 202406052141-1c4d47a
 </div>
 
 <p style="font-size: 70%">
@@ -750,7 +750,7 @@ Note:
 # Why not start the platform with one command? <!-- .element class="r-fit-text" -->
 
 <style>
-/* Argo CD and SCMM Styles */
+/* Argo CD, Prometheus, Grafana and SCMM Styles */
 .button.is-primary.is-hovered, .button.is-primary:hover {
   background-color: #4c9b9d;
 }
@@ -781,4 +781,29 @@ color: #dbdbdb;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+.css-td06pi-button {
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  padding: 0px 15px;
+  height: 32px;
+  line-height: 30px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 2px;
+  background: rgb(61, 113, 217);
+  color: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.css-td06pi-button:hover {
+  background: rgb(90, 134, 222);
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(1, 4, 9, 0.75) 0px 1px 2px;
+  border-color: transparent;
 </style>
