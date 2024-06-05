@@ -79,17 +79,7 @@ ghcr.io/cloudogu/gitops-playground:$COMMIT #Params for image go here
 
 ## `ghcr.io/cloudogu/gitops-playground`
 
-
 * OCI image <img data-src="images/OCI-logo.svg" class="floatRight" style="height: 2em; vertical-align: middle;" />
 * Contains logic to install and configure the tools <img src="images/Groovy-logo.svg" class="floatRight" style="height: 2em; vertical-align: middle;" />
 * App written in Groovy (and bash 😰) 
 * Additional resources to run e.g. in air-gapped envs <img src="images/Gnu-bash-logo.svg" class="floatRight" style="height: 2em; vertical-align: middle;" />
-
-
-
-## Your turn
-<!-- .slide: style="text-align: center;" -->
-
-<div style="margin-top: 20px">
-    <img style="border-radius: 5px;" width="40%" data-src="images/hacking-cat.webp"/>
-    <div style="font-size: 10%"><a href="https://giphy.com/gifs/JIX9t2j0ZTN9S">🌐 giphy.com/gifs/JIX9t2j0ZTN9S</a></div>

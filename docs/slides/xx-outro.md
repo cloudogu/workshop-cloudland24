@@ -1,27 +1,9 @@
-<style>
-/* You can optimize the font size of your presentation inline like so: */
-  .reveal {
-    font-size: 45px
-  }
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-  /* Save some space on the slides */
-  margin: 0 0 20px 0;
-}
-</style>
+<!-- .slide: data-background-image="images/cloudogu-background.jpg"  -->
+<!-- .slide: id="last" -->
+<!-- .slide: style="text-align: center !important;"  -->
 
-<!-- .slide: style="text-align: center !important;font-size: 80%;"  -->
-<!-- .slide: data-background-image="dist/theme/images/title-white.svg"  -->
+<p>Johannes Schnatterer, Cloudogu GmbH</p>
 
-<h1 class="title" style="margin: 0; font-size: 130%">
-    <span class="title-accent">//</span> 
-    Code ➡️ Cluster:<br/>Boosting development with a local kubernetes ops platform
-</h1>
-<p style="margin-top: 0">Johannes Schnatterer, Cloudogu GmbH</p> 
 <a style="margin: 0" title="Link to slides" href="https://cloudogu.github.io/workshop-cloudland24">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="15%" viewBox="0 0 1063.75 1241.0416666667"><g transform="scale(44.322916666667)" fill="#23a3dd"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
     <g transform="translate(0,177.29166666667)" fill="#23a3dd">
@@ -638,137 +620,29 @@
 </svg>
 
 </a>
-
-<div>
-<a href='https://floss.social/@schnatterer' style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
-<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
-</div>
-
-<div class="title-version">
-Version: 202406050933-a7d678d
-</div>
-
-<p style="font-size: 70%">
-<a id="pdf" title="PDF" class="state-background"  
-  href="pdf/Code - Cluster Boosting development with a local kubernetes ops platform.pdf">
-       <i class="far fa-file-pdf"></i>
-</a>
-<span style="margin-left: 20px">
-<a title="Go to exercises" href="#exercises">🏋️</a>
-
-</span>
-</p>
-
-
-
-<!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
-# 🙋 What is your profession?
-
-🤓 Software Engineer / Developer
-
-
-
-<!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
-# 🙋 What is your profession?
-
-🛠️ Platform Engineer / Ops person
-
-
-
-<!-- .slide: style="text-align: center;font-size: 130%;" -->
-# 🙋 Who uses Kubernetes for local development? <!-- .element: style="margin-top: 50px" class="r-fit-text"-->
 <br/>
-<tagcloud large>
-k3d
-Minkube
-Microk8s
-k3s
-KIND
-Docker Desktop
-k0s
-Rancher Desktop
-</tagcloud>
+
+💪 Join my team: <a href="https://cloudogu.com/join/cloud-engineer" class="non-blue-link"> cloudogu.com/join/cloud-engineer</a>
+
+<br/>
+
+<a href='https://floss.social/@schnatterer' style="font-size:80%" class="non-blue-link"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
+<span style="margin: 50px">
+<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%" class="non-blue-link"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
+<span style="margin: 50px">
+<a href='https://twitter.com/jschnatterer' style="font-size:80%" class="non-blue-link"><i class='fab fa-twitter'></i> @jschnatterer</a>
 
 
 
-<!-- .slide: style="text-align: center;" data-background-color="black"-->
+# Legal
+<!-- .slide: style="font-size: 80%; " -->
+Vault is a registered trademark of Hashicorp
 
-<img data-src="images/tweet-hightower-k8s-platform.png" width="190%"></img>
+Docker is a registered trademark of Docker Inc
 
-<span style="font-size: 30%"> <i class="fab fa-twitter"></i> <a href="https://twitter.com/kelseyhightower/status/935252923721793536">twitter.com/kelseyhightower/status/935252923721793536</a></span>
+Kubernetes is a registered trademark of the Linux Foundation
 
+Git is a registered trademark of Software Freedom Conservancy
 
-
-<!-- .slide: style="text-align: center" data-background-color="#27A4DE" -->
-# Start a local k8s cluster with one command <!-- .element style="color: white;" class="r-fit-text" -->
-
-<img data-src="images/k3d-cluster-create.gif" width="90%"/>
-
-
-
-<!-- .slide: style="text-align: center;" -->
-# Next, start the platform
-
-<div class="fragment">
-<img data-src="images/OCI-logo.svg" style="height: 2em; vertical-align: middle;" />
-<img data-src="images/argo-icon.svg" style="height: 2em; vertical-align: middle;" />
-<img data-src="images/Git-Icon-1788C.svg" style="height: 2em; vertical-align: middle;"/>
-<img data-src="images/grafana.svg" style="height: 2em; vertical-align: middle;"/>
-<img data-src="images/prometheus-logo.svg" style="height: 2em; vertical-align: middle;"/>
-<img data-src="images/vault-logo.svg" style="height: 2em; vertical-align: middle;"/>
-<img data-src="images/eso-round-logo.svg" style="height: 2em; vertical-align: middle;"/>
-...
-</div>
-
-<div class="fragment" style="margin-top: 20px">
-    <img style="border-radius: 5px;" width="45%" data-src="images/spongebob-squarepants-cloud-engineer.gif"/>
-    <div style="font-size: 10%"><a href="https://tenor.com/view/spongebob-squarepants-spongebob-think-thinking-gif-4280214517394111861">🌐 tenor.com/view/spongebob-squarepants-spongebob-think-thinking-gif-4280214517394111861</a></div>
-</div>
-
-Note:
-* More tools: 
-* Logging tools
-* Backup tools
-* Progressive Delivery tools
-
-
-
-<!-- .slide: data-auto-animate style="font-size: 135%;" -->
-# So, let's write a *little* script... 
-
-
-
-
-
-<!-- .slide: style="text-align: center;" data-background-color="#0D1117"-->
-
-<img data-src="images/hundreds-of-LOC-in-bash.png"/>
-<span style="font-size: 900%; position: absolute; left: 60%;" class="fragment">😰</span>
-
-
-
-# Why not start the platform with one command? <!-- .element class="r-fit-text" -->
-
-<style>
-/* Argo CD and SCMM Styles */
-.button.is-primary.is-hovered, .button.is-primary:hover {
-  background-color: #4c9b9d;
-}
-.button.is-primary {
-color: #dbdbdb;
-    background-color: #55abad;
-  border-color: transparent;
-  color: #dbdbdb;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 600;
-  height: 2.5rem;
-  min-width: 2.5rem;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-.argo-button--base { color: #F8FBFB; background-color: #6D7F8B; }
-.argo-button { cursor: pointer; position: relative; display: inline-block; vertical-align: middle; padding: 8px 18px; 
-    font-size: 13px; font-weight: 500; line-height: 1.4; text-align: center; border-radius: 24px; user-select: none; 
-    transition: background-color .2s, border .2s, color .2s; text-transform: uppercase; }
-</style>
+Grafana is a registered trademark of Grafana Labs
+The Grafana Labs Marks are trademarks of Grafana Labs, and are used with Grafana Labs’ permission. We are not affiliated with, endorsed or sponsored by Grafana Labs or its affiliat
