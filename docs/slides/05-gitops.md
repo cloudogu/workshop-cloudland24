@@ -35,13 +35,13 @@ Promote a change in code all the way to production using GitOps
 <!-- .slide: id="gitops-ci-promotion" -->
 
 First:  
-Accept Pull Request for `petclinic-plain` to deploy prod  
+Accept pull request for `petclinic-plain` to deploy prod  
 <img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/pull-requests/">scmm.localhost/scm/repo/argocd/example-apps/pull-requests</a></span>
 
 Then:
 
 1. [Change app, build image, deploy staging](#gitops-ci-1)
-2. [Accept PR, deploy production](#gitops-ci-2)
+2. [Accept pull request, deploy production](#gitops-ci-2)
 
 
 
@@ -49,14 +49,14 @@ Then:
 <!-- .slide: id="gitops-ci-1" -->
 <!-- .slide: style="font-size:90%"  -->
 
-1. Open staging app in Browser:  
+1. Open Argo CD `Application` for staging:  
+  <span style="font-size: 95%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-staging/petclinic-plain">argocd.localhost/applications/example-apps-staging/petclinic-plain</a></span>
+2. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open application in browser  
   🌐 [staging.petclinic-plain.petclinic.localhost](http://staging.petclinic-plain.petclinic.localhost/)
-2. Change `welcome` message in app repo  
+3. Change `welcome` message in app repo  
   <span style="font-size: 55%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/petclinic-plain/code/sources/main/src/main/resources/messages/messages.properties/">scmm.localhost/scm/repo/argocd/petclinic-plain/code/sources/main/src/main/resources/messages/messages.properties</a>
 3. Wait for Build   
   <span style="font-size: 100%"><img data-src="images/jenkins.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://jenkins.localhost/job/example-apps/job/petclinic-plain/job/main/">jenkins.localhost/job/example-apps/job/petclinic-plain/job/main</a></span>
-4. Open Argo CD `Application` for staging:  
-  <span style="font-size: 95%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-staging/petclinic-plain">argocd.localhost/applications/example-apps-staging/petclinic-plain</a></span>
 5. Press <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-redo" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Refresh</span></div></button> in ArgoCD UI
  ➡️ Watch GitOps deployment
 6. <i class="fas fa-sync"></i> Reload app in Browser
@@ -64,15 +64,15 @@ Then:
 
 
 
-### 2. Accept PR, deploy production
+### 2. Accept pull request, deploy production
 <!-- .slide: id="gitops-ci-2" -->
 <!-- .slide: style="font-size:90%"  -->
 
-1. Open production app in Browser:  
-  🌐 [production.petclinic-plain.petclinic.localhost](http://production.petclinic-plain.petclinic.localhost/)
-2. Open Argo CD `Application` for production:  
+1. Open Argo CD `Application` for production:  
    <span style="font-size: 95%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-production/petclinic-plain">argocd.localhost/applications/example-apps-production/petclinic-plain</a></span>
-3. Accept Pull Request for `petclinic-plain`  
+2. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open application in browser   
+  🌐 [production.petclinic-plain.petclinic.localhost](http://production.petclinic-plain.petclinic.localhost/)
+3. Accept pull request for `petclinic-plain`  
    <img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/pull-requests/">scmm.localhost/scm/repo/argocd/example-apps/pull-requests</a></span>
 4. Press <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-redo" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Refresh</span></div></button> in ArgoCD UI
    ➡️ Watch GitOps deployment

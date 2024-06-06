@@ -73,7 +73,7 @@ Let's start with some basics <a class="navigate-next">👇️</a>
 
 
 
-#### Create secret in Vault and sync into cluster via `ExternalSecret`
+#### 1. Create secret in Vault and sync into cluster via `ExternalSecret`
 <!-- .slide: style="font-size:80%" -->
 <!-- .slide: id="secrets-advanced-1" -->
 
@@ -89,13 +89,14 @@ Let's start with some basics <a class="navigate-next">👇️</a>
 2. Deploy `ExternalSecret` via GitOps (💡 example on [previous slide](#vault-gop))  
    <span style="font-size: 70%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/>  <a href="http://scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/apps/nginx-helm-umbrella">scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/apps/nginx-helm-umbrella</a> 
   * `Path`: **Add** `/templates`
-  * `Filename`: `secret.yaml`
-3. Check if <img data-src="images/secret.svg" style="height: 1.2em; vertical-align: middle;"/> `secret` was created:  
-   <span style="font-size: 95%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-production/nginx-helm-umbrella">argocd.localhost/applications/example-apps-production/nginx-helm-umbrella</a></span>
+  * Enter `Filename`: `secret.yaml` + commit message, click <button type="button" class="button is-primary">Commit</button>
+3. Go to 
+  <span style="font-size: 75%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-production/nginx-helm-umbrella">argocd.localhost/applications/example-apps-production/nginx-helm-umbrella</a></span>, click <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-sync" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Sync</span></div></button>
+4. Check if <img data-src="images/secret.svg" style="height: 1.2em; vertical-align: middle;"/> `secret` was created  
 
 
 
-#### Use secret in app
+#### 2. Use secret in app
 <!-- .slide: id="secrets-advanced-2" -->
 <!-- .slide: style="font-size:80%" -->
 
