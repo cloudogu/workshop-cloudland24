@@ -73,8 +73,9 @@ Note:
 * Fix error in repo:  
   <span style="font-size: 85%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/code/sources/main/argocd/broken.yaml">scmm.localhost/scm/repo/argocd/example-apps/code/sources/main/argocd/broken.yaml</a>
 * Go to <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> [argocd.localhost/applications/argocd/broken](http://argocd.localhost/applications/argocd/broken), click <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-sync" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Sync</span></div></button>
-* Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open application in browser 🥳  
-* Have a closer look at the concepts behind this <a class="navigate-next">👇️</a>
+* Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` [<i class="fa fa-external-link-alt"></i>](http://broken-application.localhost/) link to open application in browser 🥳  
+
+Then have a closer look at the concepts behind this <a class="navigate-next">👇️</a>
 
 
 

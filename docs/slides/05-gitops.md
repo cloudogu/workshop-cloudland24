@@ -51,8 +51,7 @@ Then:
 
 1. Open Argo CD `Application` for staging:  
   <span style="font-size: 95%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-staging/petclinic-plain">argocd.localhost/applications/example-apps-staging/petclinic-plain</a></span>
-2. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open application in browser  
-  🌐 [staging.petclinic-plain.petclinic.localhost](http://staging.petclinic-plain.petclinic.localhost/)
+2. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` [<i class="fa fa-external-link-alt"></i>](http://staging.petclinic-plain.petclinic.localhost/) link to open application in browser  
 3. Change `welcome` message in app repo  
   <span style="font-size: 55%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/petclinic-plain/code/sources/main/src/main/resources/messages/messages.properties/">scmm.localhost/scm/repo/argocd/petclinic-plain/code/sources/main/src/main/resources/messages/messages.properties</a>
 3. Wait for Build   
@@ -70,15 +69,15 @@ Then:
 
 1. Open Argo CD `Application` for production:  
    <span style="font-size: 95%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-production/petclinic-plain">argocd.localhost/applications/example-apps-production/petclinic-plain</a></span>
-2. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open application in browser   
-  🌐 [production.petclinic-plain.petclinic.localhost](http://production.petclinic-plain.petclinic.localhost/)
+2. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` [<i class="fa fa-external-link-alt"></i>](http://production.petclinic-plain.petclinic.localhost/) link to open application in browser  
 3. Accept pull request for `petclinic-plain`  
    <img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/pull-requests/">scmm.localhost/scm/repo/argocd/example-apps/pull-requests</a></span>
 4. Press <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-redo" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Refresh</span></div></button> in ArgoCD UI
    ➡️ Watch GitOps deployment
 5. <i class="fas fa-sync"></i> Reload app in Browser
    ➡️ Shows message in production 🥳🥳
-6. Have a closer look at the concepts behind this <a class="navigate-next">👇️</a>
+
+Have a closer look at the concepts behind this <a class="navigate-next">👇️</a>
 
 
 

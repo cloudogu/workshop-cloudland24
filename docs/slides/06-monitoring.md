@@ -69,7 +69,7 @@ data:
 ### 4. Watch metrics
 <!-- .slide: id="exercise-monitoring-4" -->
 
-* Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open app in browser
+* Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` [<i class="fa fa-external-link-alt"></i>](http://production.nginx-helm-umbrella.nginx.localhost/) link to open app in browser
 * Generate traffic by <i class="fas fa-sync"></i> reloading
 * Enjoy your dashboard  
   <img data-src="images/grafana.svg" style="height: 1.2em; vertical-align: middle;" /> <a href="http://grafana.localhost/d/MsjffzSZz">grafana.localhost/d/MsjffzSZz</a> 🥳

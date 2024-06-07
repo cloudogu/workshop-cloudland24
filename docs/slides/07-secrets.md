@@ -105,7 +105,8 @@ Let's start with some basics <a class="navigate-next">👇️</a>
    * 💡 Hint: Add one `nginx.extraVolumes` and  
       one `nginx.extraVolumeMounts`
 5. Go to <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> [argocd.localhost/applications/argocd/broken](http://argocd.localhost/applications/argocd/broken), click <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-sync" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Sync</span></div></button>
-6. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress` link to open application in browser, add path `/secret` 🥳
-7. Optional: Change the secret in Vault and wait for sync as in [Warmup](#secrets-warmup) 🤓
+6. Follow <img data-src="images/ing.svg" style="height: 1.2em; vertical-align: middle;"/> `ingress`  [<i class="fa fa-external-link-alt"></i>](http://broken-application.localhost/) link to open application in browser
+7. Add path `/secret` 🥳
+8. Optional: Change the secret in Vault and wait for sync as in [Warmup](#secrets-warmup) 🤓
 
 ⚠️ Secret in vault is transient, i.e. gone after restart (dev mode)
