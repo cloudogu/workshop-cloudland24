@@ -26,6 +26,22 @@ bash <(curl -s \
 
 
 
+### 💡 `k3d` hints
+
+```bash
+# Cleanup
+k3d cluster rm gitops-playground
+```
+
+```bash
+# Pause to save resources
+k3d cluster stop gitops-playground
+# Continue
+k3d cluster start gitops-playground
+```
+
+
+
 <!-- .slide: data-background-image="images/gitops-playground-local.drawio.svg" data-background-size="contain" -->
 
 

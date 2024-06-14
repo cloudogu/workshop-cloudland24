@@ -17,11 +17,12 @@
 <!-- .slide: style="text-align: center !important;font-size: 80%;"  -->
 <!-- .slide: data-background-image="dist/theme/images/title-white.svg"  -->
 
-<h1 class="title" style="margin: 0; font-size: 130%">
+<h1 class="title" style="margin-top: 0; font-size: 130%">
     <span class="title-accent">//</span> 
-    Code ➡️ Cluster:<br/>Boosting development with a local kubernetes ops platform
+    Code ➡️ Cluster:<br/>Boosting development with a<br/> local kubernetes ops platform
 </h1>
-<p style="margin-top: 0">Johannes Schnatterer, Cloudogu GmbH</p> 
+<p style="margin-top: 0">Yannick Christian Thomas, Johannes Schnatterer 
+<br/>Cloudogu GmbH</p> 
 <a style="margin: 0" title="Link to slides" href="https://cloudogu.github.io/workshop-cloudland24">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="15%" viewBox="0 0 1063.75 1241.0416666667"><g transform="scale(44.322916666667)" fill="#23a3dd"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
     <g transform="translate(0,177.29166666667)" fill="#23a3dd">
@@ -639,13 +640,14 @@
 
 </a>
 
-<div>
-<a href='https://floss.social/@schnatterer' style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
-<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
+<div style="font-size:80%">
+<a href='https://www.linkedin.com/in/yannickchristhomas' target="_blank"><i class='fab fa-linkedin'></i> in/yannickchristhomas</a>
+<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
+<a href='https://floss.social/@schnatterer' style="margin-left: 50px"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
 </div>
 
 <div class="title-version">
-Version: 202406071522-ee4a13a
+Version: 202406141732-475605f
 </div>
 
 <p style="font-size: 70%">
@@ -773,9 +775,10 @@ color: #dbdbdb;
     transition: background-color .2s, border .2s, color .2s; text-transform: uppercase; }
 
 .toolbar-link:hover:not(.disabled) {
-  background-color: #ebeef2;
-  border: 0;
   color: #1563ff;
+}
+.toolbar-link {
+  background-color: #ebeef2;
 }
 .toolbar-link:active {
   -webkit-box-shadow: none;

@@ -80,7 +80,7 @@ Let's start with some basics <a class="navigate-next">👇️</a>
 
 1. Create secret in Vault
   * <span style="font-size: 100%"><img data-src="images/vault-logo.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://vault.localhost/ui/vault/secrets/secret/">vault.localhost/ui/vault/secrets/secret</a></span> 
-  * Click <a class="ember-view toolbar-link" target="_blank" href="http://vault.localhost/ui/vault/secrets/secret/create?initialKey=production%2Fnginx-helm-umbrella">Create secret <svg class="flight-icon flight-icon-plus flight-icon-display-inline" aria-hidden="true" data-test-icon="plus" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  * Click <a class="toolbar-link" target="_blank" href="http://vault.localhost/ui/vault/secrets/secret/create?initialKey=production%2Fnginx-helm-umbrella">Create secret <svg class="flight-icon flight-icon-plus flight-icon-display-inline" aria-hidden="true" data-test-icon="plus" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <use href="#flight-plus-16"></use><symbol id="flight-plus-16" viewBox="0 0 16 16"><path d="M9 3.5a.75.75 0 00-1.5 0V7H4a.75.75 0 000 1.5h3.5V12A.75.75 0 009 12V8.5h3.5a.75.75 0 000-1.5H9V3.5z"></path></symbol>
 </svg>
 </a>  

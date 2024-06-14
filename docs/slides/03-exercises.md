@@ -47,7 +47,7 @@ Reach out if interested.
 * Login: <i class="fas fa-user"></i> `admin` / <i class="fas fa-unlock"></i> `admin`
 * <img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> [scmm.localhost](http://scmm.localhost)
 * <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> [argocd.localhost](http://argocd.localhost)
-* <img data-src="images/grafana.svg" style="height: 1.2em; vertical-align: middle;" /> [grafana.localhost](http://grafana.localhost)
+* <img data-src="images/grafana.svg" style="height: 1.2em; vertical-align: middle;" /> [grafana.localhost](http://grafana.localhost) 💡 skip changing password on first login
 * <img data-src="images/vault-logo.svg" style="height: 1.2em; vertical-align: middle;"/> [vault.localhost](http://vault.localhost)
 * <img data-src="images/mailhog.png" style="height: 1em; vertical-align: middle;"/> [mailhog.localhost](http://mailhog.localhost)
 * <img data-src="images/jenkins.svg" style="height: 1.2em; vertical-align: middle;"/> [jenkins.localhost](http://jenkins.localhost)
