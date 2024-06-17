@@ -61,7 +61,7 @@ Note:
 
 #### 3. Deploy, receive alert and fix app
 <!-- .slide: id="exercise-alerting-3" -->
-<!-- .slide: style="font-size: 80%" -->
+<!-- .slide: style="font-size: 77%" -->
 
 * Paste content here:  
   <span style="font-size: 85%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/argocd">scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/argocd</a></span>
