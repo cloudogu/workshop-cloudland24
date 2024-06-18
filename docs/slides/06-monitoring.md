@@ -48,10 +48,13 @@ nginx:
 
 #### 3. Deploy dashboard via GitOps
 <!-- .slide: id="exercise-monitoring-3" -->
-<!-- .slide: style="font-size:80%" -->
+<!-- .slide: style="font-size:65%" -->
 
 * Copy JSON from <span style="font-size: 75%"><img data-src="images/grafana.svg" style="height: 1.2em; vertical-align: middle;" /> <a href="http://grafana.localhost/d/MsjffzSZz?editview=dashboard_json">grafana.localhost/d/MsjffzSZz?editview=dashboard_json</a></span>
-* to <span style="font-size: 70%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/apps/nginx-helm-umbrella">scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/apps/nginx-helm-umbrella</a>
+* to <span style="font-size: 70%"><img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/apps/nginx-helm-umbrella">scmm.localhost/scm/repo/argocd/example-apps/code/sourceext/create/main/apps/nginx-helm-umbrella</a></span>
+  * `Path`: **Add** `/files`
+  * Enter `Filename`: `dashboard.json` + commit message, click <button type="button" class="button is-primary">Commit</button>
+* Add another file
 ```yaml
 apiVersion: v1
 kind: ConfigMap
@@ -61,8 +64,7 @@ metadata:
     grafana_dashboard: "1"
 data:
   dashboard.json: |-
-    # Paste your JSON, INDENTED BY 4 SPACES here
-    {...
+        {{ .Files.Get "files/dashboard.json" | indent 4 }}
 ```
 * `Path`: **Add** `/templates`
 * Enter `Filename`: `dashboard.yaml` + commit message, click <button type="button" class="button is-primary">Commit</button>
