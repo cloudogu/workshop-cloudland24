@@ -64,12 +64,21 @@ metadata:
     grafana_dashboard: "1"
 data:
   dashboard.json: |-
-        {{ .Files.Get "files/dashboard.json" | indent 4 }}
+{{ .Files.Get "files/dashboard.json" | indent 4 }}
 ```
 * `Path`: **Add** `/templates`
 * Enter `Filename`: `dashboard.yaml` + commit message, click <button type="button" class="button is-primary">Commit</button>
 * Go to <span style="font-size: 75%"><img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/> <a href="http://argocd.localhost/applications/example-apps-production/nginx-helm-umbrella">argocd.localhost/applications/example-apps-production/nginx-helm-umbrella</a><span>, click <button class="argo-button argo-button--base" style="margin-right: 2px;"><i class="fa fa-sync" style="margin-left: -5px; margin-right: 5px;"></i><span class="show-for-medium">Sync</span></div></button>
 * Check if <img data-src="images/cm.svg" style="height: 1.2em; vertical-align: middle;"/> `configmap` was created
+
+Note:
+Deploying the JSON inline directly will fail with `function "instance" not defined` on `helm template`.
+
+This is because we use an umbrella Chart here, which leads to helm processing all files as templates.
+
+In these templates, Helm treats `$` expressions as functions or variables, leading to the error.
+
+We work around this by loading dashboard.json from file.
 
 
 

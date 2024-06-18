@@ -647,7 +647,7 @@
 </div>
 
 <div class="title-version">
-Version: 202406181220-0b8bed4
+Version: 202406181600-f85cb16
 </div>
 
 <p style="font-size: 70%">
@@ -663,6 +663,29 @@ Version: 202406181220-0b8bed4
 
 
 
+<!-- .slide: data-background-color="#27A4DE" -->
+<!-- .slide: data-background-image="images/cloudogu-background.png"   -->
+<!-- .slide: style="color: White" -->
+
+
+<span style="position: absolute; top: 20%; width: 100%">
+<div class="container">
+  <div class="column">
+    <strong>Yannick Christian Thomas</strong>
+    <p>Cloud Engineer</p>
+  </div>
+  <div class="column">
+    <strong>Johannes Schnatterer</strong>
+    <p>Technical Lead</p>
+  </div>
+</div>
+<p style="align">Consulting + Infrastructure Team</p>
+</span>
+<a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" class="floatRight" width="30%;" style="margin-top: 25%"/></a>
+
+
+
+
 <!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
 # 🙋 What is your profession?
 
@@ -674,6 +697,13 @@ Version: 202406181220-0b8bed4
 # 🙋 What is your profession?
 
 🛠️ Platform Engineer / Ops person
+
+
+
+<!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
+# 🙋 What is your profession?
+
+🤷 None of the above
 
 
 
@@ -729,9 +759,10 @@ Rancher Desktop
 
 Note:
 * More tools: 
-* Logging tools
-* Backup tools
-* Progressive Delivery tools
+  * CI
+  * Logging tools
+  * Backup tools
+  * Progressive Delivery tools
 
 
 

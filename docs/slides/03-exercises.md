@@ -32,9 +32,10 @@
   <img data-src="images/eso-round-logo.svg" style="height: 1.2em; vertical-align: middle;"/> 
   <br/>
   Integrate secrets into app, propagate updates automatically
-*  ~~Progressive Delivery~~
-   <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/></br>
-  ~~Watch a canary release live with argo rollouts~~
+*  ~~Progressive Delivery~~ 
+   <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/>
+   ➡️ Reach out if interested 🗣️ </br>
+  <del>Watch a canary release live with argo rollouts</del>
 
 Note:
 Progressive Delivery not ready, yet. 
