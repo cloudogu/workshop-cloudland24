@@ -647,7 +647,7 @@
 </div>
 
 <div class="title-version">
-Version: 202406181600-f85cb16
+Version: 202406191309-c5b73fc
 </div>
 
 <p style="font-size: 70%">
@@ -655,18 +655,22 @@ Version: 202406181600-f85cb16
   href="pdf/Code - Cluster Boosting development with a local kubernetes ops platform.pdf">
        <i class="far fa-file-pdf"></i>
 </a>
-<span style="margin-left: 20px">
-<a title="Go to exercises" href="#exercises">🏋️</a>
-
-</span>
 </p>
+
+
+
+# Agenda
+
+1. [Intro](#intro)
+1. [Meet GOP](#gop)
+1. [Exercises](#exercises), [Getting Started](#getting-started)
 
 
 
 <!-- .slide: data-background-color="#27A4DE" -->
 <!-- .slide: data-background-image="images/cloudogu-background.png"   -->
 <!-- .slide: style="color: White" -->
-
+<!-- .slide: id="intro" -->
 
 <span style="position: absolute; top: 20%; width: 100%">
 <div class="container">
@@ -759,10 +763,11 @@ Rancher Desktop
 
 Note:
 * More tools: 
+  * Ingress Controller, DNS, Certificates
   * CI
-  * Logging tools
-  * Backup tools
+  * Logging, Tracing
   * Progressive Delivery tools
+  * Backup tools
 
 
 

@@ -646,6 +646,8 @@ bash <(curl -s \
 ```bash
 # Cleanup
 k3d cluster rm gitops-playground
+# Or 
+docker rm $(docker ps -a -q --filter "name=^k3d-gitops-playground")
 ```
 
 ```bash
@@ -666,7 +668,7 @@ k3d cluster start gitops-playground
 
 
 ## `scripts/init-cluster.sh`
-<!-- .slide: style="font-size:80%"  -->
+<!-- .slide: style="font-size:79%"  -->
 
 ```bash
 k3d cluster create gitops-playground \
@@ -689,7 +691,7 @@ k3d kubeconfig write gitops-playground
 
 
 
-## `docker run`
+## `docker run ...`
 <!-- .slide: style="font-size:80%"  -->
 
 ```bash
@@ -705,6 +707,7 @@ docker run
   -u $(id -u) \
   # Make k3d cluster available on 0.0.0.0 as described in kubeconfig
   --net=host \
+# Image, pin for reproducibility
 ghcr.io/cloudogu/gitops-playground:$VERSION \
   #Params for gop:
   --yes --base-url=http://localhost --ingress-nginx --argocd --monitoring --vault=dev --mailhog

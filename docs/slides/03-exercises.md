@@ -7,9 +7,10 @@
 
 
 
-## Exercises 🏋️
+## 🏋️ Exercises 
 <!-- .slide: id="exercises" -->
 <!-- .slide: style="font-size:90%"  -->
+<!-- .slide: id="exercises" -->
 
 * <strong><a href="#exercise-alerting">GitOps+Alerting</a></strong>
  <img data-src="images/argo-icon.svg" style="height: 1.2em; vertical-align: middle;"/>
@@ -43,7 +44,8 @@ Reach out if interested.
 
 
 
-## Getting started
+## 🛫 Getting started
+<!-- .slide: id="getting-started" -->
 
 * Login: <i class="fas fa-user"></i> `admin` / <i class="fas fa-unlock"></i> `admin`
 * <img data-src="images/Git-Icon-1788C.svg" style="height: 1.2em; vertical-align: middle;"/> [scmm.localhost](http://scmm.localhost)
