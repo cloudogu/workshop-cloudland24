@@ -647,7 +647,7 @@
 </div>
 
 <div class="title-version">
-Version: 202406191309-c5b73fc
+Version: 202406191426-289078a
 </div>
 
 <p style="font-size: 70%">
@@ -685,7 +685,7 @@ Version: 202406191309-c5b73fc
 </div>
 <p style="align">Consulting + Infrastructure Team</p>
 </span>
-<a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" class="floatRight" width="30%;" style="margin-top: 25%"/></a>
+<a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" class="floatRight" width="25%;" style="margin-top: 25%"/></a>
 
 
 
